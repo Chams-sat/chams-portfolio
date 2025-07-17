@@ -1,5 +1,6 @@
 {
   "name": "vite_react_shadcn_ts",
+  "homepage": "https://chams-sat.github.io/chams-sat",
   "private": true,
   "version": "0.0.0",
   "type": "module",
