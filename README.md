@@ -99,4 +99,4 @@ This project is licensed under the [MIT License](./LICENSE).
 
 ---
 
-> Designed & built by Chams Satour. Feel free to use this template for your own portfolio!
+> Designed & built by Chams Satour.
