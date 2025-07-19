@@ -1,6 +1,6 @@
 {
-  "name": "vite_react_shadcn_ts",
-  "homepage": "https://chams-sat.github.io/chams-sat",
+  "name": "chams-satour-portfolio",
+  "homepage": "https://chams-sat.github.io/chams-satour",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -11,7 +11,8 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "postbuild": "cp dist/index.html dist/404.html"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
