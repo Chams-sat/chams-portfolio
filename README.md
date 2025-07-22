@@ -3,7 +3,7 @@
 A modern, responsive developer portfolio built with React, Vite, TypeScript, Tailwind CSS, and shadcn/ui. Showcasing projects, skills, and contact information with a beautiful dark theme and smooth user experience.
 
 <p align="center">
-  <img src="./Screen Shot 2025-07-16 at 5.01.43 PM.png" alt="Project Screenshot" width="80%" />
+  <img src="images/Screen-Shot.png" alt="Project Screenshot" width="80%" />
 </p>
 
 <p align="center">
@@ -99,4 +99,4 @@ This project is licensed under the [MIT License](./LICENSE).
 
 ---
 
-> Designed & built by Chams Satour. Feel free to use this template for your own portfolio!
+> Designed & built by Chams Satour.
