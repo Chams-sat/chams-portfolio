@@ -1,6 +1,6 @@
 {
   "name": "chams-satour-portfolio",
-  "homepage": "https://chams-sat.github.io/chams-satour",
+  "homepage": "https://chams-sat.github.io/chams-portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -11,8 +11,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
-    "postbuild": "cp dist/index.html dist/404.html"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",

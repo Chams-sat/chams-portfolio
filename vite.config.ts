@@ -11,7 +11,7 @@ export default defineConfig(({ mode }) => ({
   plugins: [
     react(),
   ],
-  base: "/chams-sat/",
+  base: "/chams-portfolio",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
