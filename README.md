@@ -15,7 +15,7 @@ A modern, responsive developer portfolio built with React, Vite, TypeScript, Tai
 
 ## 🚀 Live Demo
 
-[View Live Demo](https://chams-sat.github.io/chams-sat/)
+[View Live Demo](https://chams-sat.github.io/chams-portfolio/)
 
 ## ✨ Features
 
