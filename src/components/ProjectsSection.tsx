@@ -46,6 +46,7 @@ const projects: Project[] = [{
   image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=500",
   tags: ["JavaScript", "API", "CSS"],
   githubUrl: "#",
+  liveUrl: "#",
   featured: false
 }, {
   id: 5,
@@ -63,6 +64,7 @@ const projects: Project[] = [{
   image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=500",
   tags: ["React", "Chart.js", "API"],
   githubUrl: "#",
+  liveUrl: "#",
   featured: false
 }, {
   id: 7,
@@ -71,6 +73,7 @@ const projects: Project[] = [{
   image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=500",
   tags: ["Vanilla JavaScript", "CSS", "HTML"],
   githubUrl: "https://github.com/Chams-sat/Todo-app.git",
+  liveUrl: "#",
   featured: false
 }];
 
