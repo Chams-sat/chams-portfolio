@@ -73,8 +73,8 @@ const projects: Project[] = [{
   image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=500",
   tags: ["Vanilla JavaScript", "CSS", "HTML"],
   githubUrl: "https://github.com/Chams-sat/Todo-app.git",
-  liveUrl: "#",
-  featured: false
+  liveUrl: "https://chams-sat.github.io/Todo-app/",
+  featured: true
 }];
 
 // All unique tags from projects
