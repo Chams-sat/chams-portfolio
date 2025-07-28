@@ -18,8 +18,8 @@ const projects: Project[] = [{
   description: "A modern portfolio website with sleek animations, dark theme, and responsive design. Built with React and Tailwind CSS.",
   image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=500",
   tags: ["React", "TypeScript", "Tailwind CSS"],
-  githubUrl: "#",
-  liveUrl: "#",
+  githubUrl: "https://github.com/Chams-sat/chams-portfolio.git",
+  liveUrl: "https://chams-sat.github.io/chams-portfolio/",
   featured: true
 }, {
   id: 2,
@@ -29,7 +29,7 @@ const projects: Project[] = [{
   tags: ["Next.js", "MongoDB", "Node.js", "Stripe"],
   githubUrl: "#",
   liveUrl: "#",
-  featured: true
+  featured: false
 }, {
   id: 3,
   title: "Task Management App",
@@ -42,12 +42,12 @@ const projects: Project[] = [{
 }, {
   id: 4,
   title: "Weather Dashboard",
-  description: "Interactive weather dashboard that provides real-time weather information and forecasts using weather API integration.",
+  description: "A real-time weather application built with React and Vite. Fetches data from OpenWeatherMap and displays current weather and 5-day forecasts in a clean, user-friendly interface.",
   image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=500",
-  tags: ["JavaScript", "API", "CSS"],
-  githubUrl: "#",
-  liveUrl: "#",
-  featured: false
+  tags: ["React", "Tailwind CSS", "API"],
+  githubUrl: "https://github.com/Chams-sat/Weather-app.git",
+  liveUrl: "https://chams-sat.github.io/Weather-app/",
+  featured: true
 }, {
   id: 5,
   title: "Blog Platform",
@@ -56,7 +56,7 @@ const projects: Project[] = [{
   tags: ["Node.js", "Express", "MongoDB", "React"],
   githubUrl: "#",
   liveUrl: "#",
-  featured: true
+  featured: false
 }, {
   id: 6,
   title: "Social Media Dashboard",
@@ -70,7 +70,7 @@ const projects: Project[] = [{
   id: 7,
   title: "Modern Todo App",
   description: "A modern todo app with a sleek design and smooth animations. Built with Vanilla JavaScript and CSS.",
-  image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=500",
+  image: "images/todo-screen.png",
   tags: ["Vanilla JavaScript", "CSS", "HTML"],
   githubUrl: "https://github.com/Chams-sat/Todo-app.git",
   liveUrl: "https://chams-sat.github.io/Todo-app/",
