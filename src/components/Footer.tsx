@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Github, Twitter, Linkedin } from 'lucide-react';
+import { Github, X, Linkedin } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
@@ -28,9 +28,9 @@ const Footer: React.FC = () => {
               target="_blank" 
               rel="noopener noreferrer"
               className="text-slate hover:text-highlight transition-colors"
-              aria-label="Twitter"
+              aria-label="X"
             >
-              <Twitter size={20} />
+              <X size={20} />
             </a>
             <a 
               href="https://linkedin.com/" 

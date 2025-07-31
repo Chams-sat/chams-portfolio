@@ -3,7 +3,7 @@
 A modern, responsive developer portfolio built with React, Vite, TypeScript, Tailwind CSS, and shadcn/ui. Showcasing projects, skills, and contact information with a beautiful dark theme and smooth user experience.
 
 <p align="center">
-  <img src="images/Screen-Shot.png" alt="Project Screenshot" width="80%" />
+  <img src="/public/images/Screen-Shot.png" alt="Project Screenshot" width="80%" />
 </p>
 
 <p align="center">

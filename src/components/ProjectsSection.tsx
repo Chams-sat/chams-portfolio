@@ -70,7 +70,7 @@ const projects: Project[] = [{
   id: 7,
   title: "Modern Todo App",
   description: "A modern todo app with a sleek design and smooth animations. Built with Vanilla JavaScript and CSS.",
-  image: "images/todo-screen.png",
+  image: "public/images/todo-screen.png",
   tags: ["Vanilla JavaScript", "CSS", "HTML"],
   githubUrl: "https://github.com/Chams-sat/Todo-app.git",
   liveUrl: "https://chams-sat.github.io/Todo-app/",
@@ -140,7 +140,7 @@ const ProjectsSection: React.FC = () => {
   return <section id="projects" className="py-16 md:py-24">
       <div className="container-section">
         <h2 className="section-heading">
-           My Projects
+          My Projects
         </h2>
         
         <div className="flex flex-col sm:flex-row justify-between items-center gap-4 mb-8">

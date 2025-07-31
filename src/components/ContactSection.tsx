@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Button } from '../components/ui/button';
 import { Card } from '../components/ui/card';
-import { Github, Twitter, Linkedin, Mail } from 'lucide-react';
+import { Github, X, Linkedin, Mail } from 'lucide-react';
 import { useToast } from '../hooks/use-toast';
 const socialLinks = [{
   name: "GitHub",
@@ -12,9 +12,9 @@ const socialLinks = [{
   icon: Linkedin,
   url: "https://linkedin.com/in/chams-satour"
 }, {
-  name: "Twitter",
-  icon: Twitter,
-  url: "https://twitter.com/chams_satour"
+  name: "X",
+  icon: X,
+  url: "https://X.com/chams_satour"
 }, {
   name: "Email",
   icon: Mail,
