@@ -10,15 +10,15 @@ const socialLinks = [{
 }, {
   name: "LinkedIn",
   icon: Linkedin,
-  url: "https://linkedin.com/in/chams-satour"
+  url: "https://www.linkedin.com/in/chams-satour-b0a489378/"
 }, {
   name: "X",
   icon: X,
-  url: "https://X.com/chams_satour"
+  url: "https://x.com/ChamsSatour"
 }, {
   name: "Email",
   icon: Mail,
-  url: "satour.chams@gmail.com"
+  url: "https://satour.chams@gmail.com"
 }];
 interface FormState {
   name: string;
@@ -80,7 +80,7 @@ const ContactSection: React.FC = () => {
   return <section id="contact" className="py-16 md:py-24">
       <div className="container-section">
         <h2 className="section-heading">
-           Get In Touch
+          Get In Touch
         </h2>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mt-10">
