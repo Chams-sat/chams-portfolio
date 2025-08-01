@@ -70,7 +70,7 @@ const projects: Project[] = [{
   id: 7,
   title: "Modern Todo App",
   description: "A modern todo app with a sleek design and smooth animations. Built with Vanilla JavaScript and CSS.",
-  image: "public/images/todo-screen.png",
+  image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=500",
   tags: ["Vanilla JavaScript", "CSS", "HTML"],
   githubUrl: "https://github.com/Chams-sat/Todo-app.git",
   liveUrl: "https://chams-sat.github.io/Todo-app/",
