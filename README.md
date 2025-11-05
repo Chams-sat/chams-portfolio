@@ -9,8 +9,8 @@ A modern, responsive developer portfolio built with React, Vite, TypeScript, Tai
 <p align="center">
   <a href="#"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License"></a>
   <a href="#"><img src="https://img.shields.io/badge/React-18-blue?logo=react" alt="React"></a>
-  <a href="#"><img src="https://img.shields.io/badge/Vite-4.0-purple?logo=vite" alt="Vite"></a>
-  <a href="#"><img src="https://img.shields.io/badge/Tailwind_CSS-3.0-38bdf8?logo=tailwindcss" alt="Tailwind CSS"></a>
+  <a href="#"><img src="https://img.shields.io/badge/Vite-5.4-purple?logo=vite" alt="Vite"></a>
+  <a href="#"><img src="https://img.shields.io/badge/Tailwind_CSS-3.4-38bdf8?logo=tailwindcss" alt="Tailwind CSS"></a>
 </p>
 
 ## 🚀 Live Demo
@@ -38,6 +38,9 @@ A modern, responsive developer portfolio built with React, Vite, TypeScript, Tai
 - [Lucide Icons](https://lucide.dev/)
 
 ## 📦 Getting Started
+<details>
+<summary>Click to view setup and development instructions</summary>
+<br>
 
 ### Prerequisites
 - Node.js (v18+ recommended)
@@ -45,22 +48,24 @@ A modern, responsive developer portfolio built with React, Vite, TypeScript, Tai
 
 ### Installation
 ```bash
-git clone <YOUR_REPO_URL>
-cd <YOUR_PROJECT_NAME>
-npm install # or yarn install
+git clone https://github.com/Chams-sat/chams-portfolio.git
+cd chams-portfolio
+npm install
 ```
 
 ### Development
 ```bash
-npm run dev # or yarn dev
+npm run dev
 ```
-Visit [http://localhost:5173](http://localhost:5173) to view your portfolio.
+Visit http://localhost:5173 to view your portfolio.
 
 ### Build for Production
 ```bash
-npm run build # or yarn build
+npm run build
 ```
 The output will be in the `dist/` folder.
+
+</details>
 
 ## 📁 Folder Structure
 ```

@@ -1,8 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Button } from '../components/ui/button';
 import { Card } from '../components/ui/card';
 import { Github, X, Linkedin, Mail } from 'lucide-react';
 import { useToast } from '../hooks/use-toast';
+import { useForm } from 'react-hook-form';
+import { zodResolver } from '@hookform/resolvers/zod';
+import { z } from 'zod';
+
 const socialLinks = [{
   name: "GitHub",
   icon: Github,
@@ -20,63 +24,55 @@ const socialLinks = [{
   icon: Mail,
   url: "https://satour.chams@gmail.com"
 }];
-interface FormState {
-  name: string;
-  email: string;
-  subject: string;
-  message: string;
-}
-const initialFormState: FormState = {
-  name: '',
-  email: '',
-  subject: '',
-  message: ''
-};
+
+const contactFormSchema = z.object({
+  name: z.string().min(2, { message: "Name must be at least 2 characters." }),
+  email: z.string().email({ message: "Please enter a valid email address." }),
+  subject: z.string().min(5, { message: "Subject must be at least 5 characters." }),
+  message: z.string().min(10, { message: "Message must be at least 10 characters." }),
+});
+
+type ContactFormValues = z.infer<typeof contactFormSchema>;
+
 const ContactSection: React.FC = () => {
-  const [formData, setFormData] = useState<FormState>(initialFormState);
-  const [isSubmitting, setIsSubmitting] = useState(false);
+  const { toast } = useToast();
   const {
-    toast
-  } = useToast();
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const {
-      name,
-      value
-    } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }));
-  };
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
+    register,
+    handleSubmit,
+    formState: { errors, isSubmitting },
+    reset,
+  } = useForm<ContactFormValues>({
+    resolver: zodResolver(contactFormSchema),
+  });
+
+  const onSubmit = async (data: ContactFormValues) => {
+    // Here you would typically send the data to a backend service
+    // e.g., using fetch, axios, or a library like react-query's useMutation
 
     // Simulate API call
     try {
       await new Promise(resolve => setTimeout(resolve, 1000));
-      console.log('Form submitted:', formData);
+      console.log('Form submitted:', data);
 
       // Show success message
       toast({
         title: "Message sent!",
         description: "Thanks for reaching out. I'll get back to you soon.",
-        duration: 5000
+        duration: 5000,
       });
 
       // Reset form
-      setFormData(initialFormState);
+      reset();
     } catch (error) {
       console.error('Error submitting form:', error);
       toast({
         title: "Something went wrong",
         description: "Unable to send your message. Please try again.",
-        variant: "destructive"
+        variant: "destructive",
       });
-    } finally {
-      setIsSubmitting(false);
     }
   };
+
   return <section id="contact" className="py-16 md:py-24">
       <div className="container-section">
         <h2 className="section-heading">
@@ -110,27 +106,31 @@ const ContactSection: React.FC = () => {
           </div>
           
           <Card className="card overflow-hidden">
-            <form onSubmit={handleSubmit} className="space-y-6 p-1">
+            <form onSubmit={handleSubmit(onSubmit)} className="space-y-6 p-1">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 <div className="relative group">
-                  <input id="name" name="name" placeholder="Your Name" required value={formData.name} onChange={handleChange} className="bg-navy-dark/50 border-slate-dark placeholder:text-slate-dark focus:border-highlight transition-all w-full px-3 py-2 rounded" />
+                  <input id="name" placeholder="Your Name" {...register("name")} className="bg-navy-dark/50 border-slate-dark placeholder:text-slate-dark focus:border-highlight transition-all w-full px-3 py-2 rounded" />
                   <span className="absolute bottom-0 left-0 h-[2px] w-0 bg-highlight group-focus-within:w-full transition-all duration-300"></span>
+                  {errors.name && <p className="text-red-500 text-xs mt-1">{errors.name.message}</p>}
                 </div>
                 
                 <div className="relative group">
-                  <input id="email" name="email" type="email" placeholder="Your Email" required value={formData.email} onChange={handleChange} className="bg-navy-dark/50 border-slate-dark placeholder:text-slate-dark focus:border-highlight transition-all w-full px-3 py-2 rounded" />
+                  <input id="email" type="email" placeholder="Your Email" {...register("email")} className="bg-navy-dark/50 border-slate-dark placeholder:text-slate-dark focus:border-highlight transition-all w-full px-3 py-2 rounded" />
                   <span className="absolute bottom-0 left-0 h-[2px] w-0 bg-highlight group-focus-within:w-full transition-all duration-300"></span>
+                  {errors.email && <p className="text-red-500 text-xs mt-1">{errors.email.message}</p>}
                 </div>
               </div>
               
               <div className="relative group">
-                <input id="subject" name="subject" placeholder="Subject" required value={formData.subject} onChange={handleChange} className="bg-navy-dark/50 border-slate-dark placeholder:text-slate-dark focus:border-highlight transition-all w-full px-3 py-2 rounded" />
+                <input id="subject" placeholder="Subject" {...register("subject")} className="bg-navy-dark/50 border-slate-dark placeholder:text-slate-dark focus:border-highlight transition-all w-full px-3 py-2 rounded" />
                 <span className="absolute bottom-0 left-0 h-[2px] w-0 bg-highlight group-focus-within:w-full transition-all duration-300"></span>
+                {errors.subject && <p className="text-red-500 text-xs mt-1">{errors.subject.message}</p>}
               </div>
               
               <div className="relative group">
-                <textarea id="message" name="message" placeholder="Your Message" required rows={6} value={formData.message} onChange={handleChange} className="bg-navy-dark/50 border-slate-dark placeholder:text-slate-dark focus:border-highlight transition-all resize-none w-full px-3 py-2 rounded" />
+                <textarea id="message" placeholder="Your Message" rows={6} {...register("message")} className="bg-navy-dark/50 border-slate-dark placeholder:text-slate-dark focus:border-highlight transition-all resize-none w-full px-3 py-2 rounded" />
                 <span className="absolute bottom-0 left-0 h-[2px] w-0 bg-highlight group-focus-within:w-full transition-all duration-300"></span>
+                {errors.message && <p className="text-red-500 text-xs mt-1">{errors.message.message}</p>}
               </div>
               
               <Button type="submit" className="btn btn-primary w-full" disabled={isSubmitting}>

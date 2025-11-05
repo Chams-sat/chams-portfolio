@@ -75,6 +75,24 @@ const projects: Project[] = [{
   githubUrl: "https://github.com/Chams-sat/Todo-app.git",
   liveUrl: "https://chams-sat.github.io/Todo-app/",
   featured: true
+}, {
+  id: 8,
+  title: "Kindergarten Website",
+  description: "A vibrant, responsive website for Little Sprouts Kindergarten, designed to showcase the nurturing environment, programs, and activities offered to young children, including internationalization (English and Arabic).",
+  image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=500",
+  tags: ["Vanilla JavaScript", "CSS", "HTML", "Tailwind CSS"],
+  githubUrl: "https://github.com/Chams-sat/Little-Sprouts.git",
+  liveUrl: "https://chams-sat.github.io/Little-Sprouts/",
+  featured: true
+}, {
+  id: 9,
+  title: "Indoor Plant Care Dashboard",
+  description: "A responsive web dashboard prototype designed to help users track the care and watering schedules for their indoor plants. This project is built with vanilla HTML, CSS, and JavaScript, and styled using the Tailwind CSS CDN.",
+  image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=500",
+  tags: ["Vanilla JavaScript", "CSS", "HTML", "Tailwind CSS"],
+  githubUrl: "https://github.com/Chams-sat/Plant-Dashboard.git",
+  liveUrl: "https://chams-sat.github.io/Plant-Dashboard/",
+  featured: true
 }];
 
 // All unique tags from projects
