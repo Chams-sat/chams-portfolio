@@ -60,7 +60,7 @@ const SkillsSection: React.FC = () => {
   return <section id="skills" className="py-16 md:py-24 bg-navy-dark/30">
       <div className="container-section">
         <h2 className="section-heading">
-           My Skills
+          My Skills
         </h2>
         
         <div className="flex justify-center mb-10 space-x-4 overflow-x-auto pb-4">

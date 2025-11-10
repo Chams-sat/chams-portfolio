@@ -7,10 +7,10 @@ A modern, responsive developer portfolio built with React, Vite, TypeScript, Tai
 </p>
 
 <p align="center">
-  <a href="#"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License"></a>
-  <a href="#"><img src="https://img.shields.io/badge/React-18-blue?logo=react" alt="React"></a>
-  <a href="#"><img src="https://img.shields.io/badge/Vite-5.4-purple?logo=vite" alt="Vite"></a>
-  <a href="#"><img src="https://img.shields.io/badge/Tailwind_CSS-3.4-38bdf8?logo=tailwindcss" alt="Tailwind CSS"></a>
+  <a href="./LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License"></a>
+  <a href="https://react.dev/"><img src="https://img.shields.io/badge/React-18-blue?logo=react" alt="React"></a>
+  <a href="https://vitejs.dev/"><img src="https://img.shields.io/badge/Vite-5.4-purple?logo=vite" alt="Vite"></a>
+  <a href="https://tailwindcss.com/"><img src="https://img.shields.io/badge/Tailwind_CSS-3.4-38bdf8?logo=tailwindcss" alt="Tailwind CSS"></a>
 </p>
 
 ## 🚀 Live Demo

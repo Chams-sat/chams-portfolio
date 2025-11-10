@@ -1,13 +1,13 @@
 
 import React, { useEffect } from 'react';
-import Navbar from '../components/Navbar';
-import HeroSection from '../components/HeroSection';
-import AboutSection from '../components/AboutSection';
-import SkillsSection from '../components/SkillsSection';
-import ProjectsSection from '../components/ProjectsSection';
-import ContactSection from '../components/ContactSection';
-import Footer from '../components/Footer';
-import ParticleBackground from '../components/ParticleBackground';
+import Navbar from './Navbar';
+import HeroSection from './HeroSection';
+import AboutSection from './AboutSection';
+import SkillsSection from './SkillsSection';
+import ProjectsSection from './ProjectsSection';
+import ContactSection from './ContactSection';
+import Footer from './Footer';
+import ParticleBackground from './ParticleBackground';
 
 const Index = () => {
   // Scroll to the top when the component mounts

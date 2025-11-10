@@ -22,7 +22,7 @@ const socialLinks = [{
 }, {
   name: "Email",
   icon: Mail,
-  url: "https://satour.chams@gmail.com"
+  url: "mailto:satour.chams@gmail.com"
 }];
 
 const contactFormSchema = z.object({
