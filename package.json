@@ -1,6 +1,5 @@
 {
   "name": "chams-satour-portfolio",
-  "homepage": "https://chams-sat.github.io/chams-portfolio/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,9 +8,7 @@
     "build": "vite build",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
@@ -23,7 +20,6 @@
     "clsx": "^2.1.1",
     "date-fns": "^3.6.0",
     "framer-motion": "^12.9.2",
-    "gh-pages": "^6.3.0",
     "lucide-react": "^0.462.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
