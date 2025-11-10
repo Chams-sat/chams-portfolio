@@ -45,30 +45,32 @@ const ContactSection: React.FC = () => {
     resolver: zodResolver(contactFormSchema),
   });
 
+  const encode = (data: Record<string, any>) => {
+    return Object.keys(data)
+        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+        .join("&");
+  }
+
   const onSubmit = async (data: ContactFormValues) => {
-    // Here you would typically send the data to a backend service
-    // e.g., using fetch, axios, or a library like react-query's useMutation
-
-    // Simulate API call
     try {
-      await new Promise(resolve => setTimeout(resolve, 1000));
-      console.log('Form submitted:', data);
+      await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: encode({ "form-name": "contact", ...data })
+      });
 
-      // Show success message
       toast({
         title: "Message sent!",
         description: "Thanks for reaching out. I'll get back to you soon.",
         duration: 5000,
       });
-
-      // Reset form
       reset();
     } catch (error) {
-      console.error('Error submitting form:', error);
       toast({
-        title: "Something went wrong",
-        description: "Unable to send your message. Please try again.",
         variant: "destructive",
+        title: "Uh oh! Something went wrong.",
+        description: "There was a problem with your request. Please try again.",
+        duration: 5000
       });
     }
   };
@@ -106,7 +108,14 @@ const ContactSection: React.FC = () => {
           </div>
           
           <Card className="card overflow-hidden">
-            <form onSubmit={handleSubmit(onSubmit)} className="space-y-6 p-1">
+            <form
+              name="contact"
+              method="POST"
+              data-netlify="true"
+              onSubmit={handleSubmit(onSubmit)}
+              className="space-y-6 p-1"
+            >
+              <input type="hidden" name="form-name" value="contact" />
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 <div className="relative group">
                   <input id="name" placeholder="Your Name" {...register("name")} className="bg-navy-dark/50 border-slate-dark placeholder:text-slate-dark focus:border-highlight transition-all w-full px-3 py-2 rounded" />
