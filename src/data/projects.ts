@@ -16,7 +16,7 @@ export const projects: Project[] = [{
   image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=500",
   tags: ["React", "TypeScript", "Tailwind CSS"],
   githubUrl: "https://github.com/Chams-sat/chams-portfolio",
-  liveUrl: "https://chams-portfolio.netlify.app/",
+  liveUrl: "https://chams-satour.netlify.app/",
   featured: true
 }, {
   id: 2,
