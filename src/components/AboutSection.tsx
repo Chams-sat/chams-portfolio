@@ -40,7 +40,7 @@ const AboutSection: React.FC = () => {
               <div className="absolute inset-0 bg-highlight opacity-20 group-hover:opacity-10 transition-opacity"></div>
               <div className="absolute inset-0 border-2 border-highlight rounded-md transform translate-x-4 translate-y-4 group-hover:translate-x-3 group-hover:translate-y-3 transition-transform"></div>
               <div className="w-full h-full bg-navy-light rounded-md overflow-hidden">
-                <div className="w-full h-full bg-[url('https://images.unsplash.com/photo-1649972904349-6e44c42644a7?auto=format&fit=crop&w=500')] bg-cover bg-center"></div>
+                <div className="w-full h-full bg-[url('/chams.jpg')] bg-cover bg-center"></div>
               </div>
             </div>
           </Card>
