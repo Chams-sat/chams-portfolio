@@ -7,15 +7,15 @@ interface Skill {
 }
 const skills: Skill[] = [{
   name: 'React',
-  percentage: 90,
+  percentage: 60,
   category: 'frontend'
 }, {
   name: 'JavaScript',
-  percentage: 95,
+  percentage: 75,
   category: 'frontend'
 }, {
   name: 'TypeScript',
-  percentage: 85,
+  percentage: 50,
   category: 'frontend'
 }, {
   name: 'HTML & CSS',
@@ -23,35 +23,35 @@ const skills: Skill[] = [{
   category: 'frontend'
 }, {
   name: 'Node.js',
-  percentage: 80,
+  percentage: 0,
   category: 'backend'
 }, {
   name: 'Express',
-  percentage: 85,
+  percentage: 0,
   category: 'backend'
 }, {
   name: 'MongoDB',
-  percentage: 75,
+  percentage: 0,
   category: 'backend'
 }, {
   name: 'SQL',
-  percentage: 75,
+  percentage: 30,
   category: 'backend'
 }, {
   name: 'Git',
-  percentage: 90,
+  percentage: 95,
   category: 'tools'
 }, {
   name: 'Docker',
-  percentage: 70,
+  percentage: 20,
   category: 'tools'
 }, {
   name: 'AWS',
-  percentage: 65,
+  percentage: 30,
   category: 'tools'
 }, {
   name: 'Figma',
-  percentage: 80,
+  percentage: 40,
   category: 'tools'
 }];
 const SkillsSection: React.FC = () => {

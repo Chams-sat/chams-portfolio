@@ -4,23 +4,20 @@ const AboutSection: React.FC = () => {
   return <section id="about" className="py-16 md:py-24">
       <div className="container-section">
         <h2 className="section-heading text-center">
-           About Me
+          About Me
         </h2>
         
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-10">
           <Card className="card col-span-2 lg:col-span-2">
             <div className="space-y-4">
               <p className="text-slate-light">
-                Hello! I'm Chams, a passionate developer who enjoys creating things that live on the internet.
-                My interest in web development started back in 2015 when I decided to try customizing a theme
-                for my personal blog — turns out modifying CSS and seeing the changes render in real-time sparked
-                something exciting for me!
+                Hello! I'm Chams. I spent my university years studying the intricate systems of plant microbiology, but I discovered my true passion for building systems when I wrote my first line of code. I decided to take that scientific curiosity and apply it to the digital world.
+                
               </p>
               
               <p className="text-slate-light">
-                Fast-forward to today, and I've had the privilege of working on diverse projects ranging from complex 
-                web applications to intuitive mobile interfaces. My focus is building accessible, inclusive products 
-                and digital experiences for a variety of clients.
+                As a self-taught Junior Frontend Developer, I’ve traded the microscope for a code editor. My background in science has gifted me with extreme attention to detail and a methodical approach to problem-solving—skills I now use to build clean, responsive, and user-centric web applications. I’m a lifelong learner currently mastering the React ecosystem and always looking for the next technical challenge to sprout.
+                
               </p>
               
               <p className="text-slate-light">

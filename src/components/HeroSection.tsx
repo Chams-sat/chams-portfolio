@@ -7,7 +7,7 @@ const HeroSection: React.FC = () => {
         <div className="flex flex-col items-start max-w-3xl animate-fade-in" style={{
         animationDelay: '300ms'
       }}>
-          <p className="mb-6 text-gray-100 text-base font-thin">Hi, my name is</p>
+          <p className="mb-6 text-gray-100 text-base font-bold">Hi, my name is</p>
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-text-dark mb-4">
             Chams Satour.
           </h1>
@@ -15,8 +15,8 @@ const HeroSection: React.FC = () => {
             I build <TypewriterEffect phrases={["web applications.", "user interfaces.", "amazing experiences.", "modern solutions."]} />
           </h2>
           <p className="text-slate text-lg mb-10 max-w-xl">
-            I'm a full-stack developer specializing in building exceptional digital experiences. 
-            My focus is creating innovative, accessible, and user-centered products.
+            A self-taught developer dedicated to writing clean code and building intuitive user experiences that solve real-world problems.
+            Specializing in React, JavaScript, and modern CSS to turn complex ideas into seamless digital reality.
           </p>
           <div className="flex flex-wrap gap-4">
             <Button asChild className="btn btn-primary">
