@@ -49,16 +49,17 @@ export const projects: Project[] = [{
   description: "Full-featured blog platform with markdown support, comment system, and admin dashboard for content management.",
   image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=500",
   tags: ["Node.js", "Express", "MongoDB", "React"],
-  githubUrl: "https://github.com/Chams-sat/blog-platform", // Example URL
+  githubUrl: "https://github.com/Chams-sat/blog-platform",
   featured: false
 }, {
   id: 6,
-  title: "Social Media Dashboard",
-  description: "Dashboard to track and analyze social media metrics across multiple platforms with data visualization.",
+  title: "Velocity E-commerce",
+  description: "Velocity is a concept storefront designed to push the boundaries of standard e-commerce UI. It focuses on fluid micro-interactions, dynamic theming, and a premium feel that engages users immediately.",
   image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=500",
-  tags: ["React", "Chart.js", "API"],
-  githubUrl: "https://github.com/Chams-sat/social-media-dashboard", // Example URL
-  featured: false
+  tags: ["Next.js", "Tailwind CSS"],
+  githubUrl: "https://github.com/Chams-sat/Velocity",
+  liveUrl: "https://chams-sat.github.io/velocity/",
+  featured: true
 }, {
   id: 7,
   title: "Modern Todo App",
