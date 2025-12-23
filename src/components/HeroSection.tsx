@@ -19,7 +19,7 @@ const HeroSection: React.FC = () => {
             Specializing in React, JavaScript, and modern CSS to turn complex ideas into seamless digital reality.
           </p>
           <div className="flex flex-wrap gap-4">
-            <Button asChild className="btn btn-primary">
+            <Button asChild className="btn btn-outline">
               <a href="#projects">View My Work</a>
             </Button>
             <Button asChild variant="outline" className="btn btn-outline">

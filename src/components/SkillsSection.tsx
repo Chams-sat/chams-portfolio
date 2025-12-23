@@ -26,16 +26,16 @@ const skills: Skill[] = [{
   percentage: 0,
   category: 'backend'
 }, {
-  name: 'Express',
-  percentage: 0,
-  category: 'backend'
+  name: 'Next.js',
+  percentage: 40,
+  category: 'frontend'
 }, {
   name: 'MongoDB',
   percentage: 0,
   category: 'backend'
 }, {
   name: 'SQL',
-  percentage: 30,
+  percentage: 20,
   category: 'backend'
 }, {
   name: 'Git',
@@ -46,8 +46,8 @@ const skills: Skill[] = [{
   percentage: 20,
   category: 'tools'
 }, {
-  name: 'AWS',
-  percentage: 30,
+  name: 'Npm',
+  percentage: 60,
   category: 'tools'
 }, {
   name: 'Figma',
