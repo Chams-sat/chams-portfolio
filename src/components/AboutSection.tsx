@@ -25,7 +25,7 @@ const AboutSection: React.FC = () => {
               </p>
               
               <ul className="grid grid-cols-2 gap-2 text-slate-light mt-4">
-                {['JavaScript (ES6+)', 'TypeScript', 'React',  'Next.js', 'Tailwind CSS'].map(tech => <li key={tech} className="flex items-center">
+                {['JavaScript (ES6+)', 'TypeScript', 'React',  'Next.js', 'Tailwind CSS', 'HTML & CSS'].map(tech => <li key={tech} className="flex items-center">
                     <span className="text-highlight mr-2">▹</span> {tech}
                   </li>)}
               </ul>
