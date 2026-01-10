@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="text-center md:text-left">
             <p className="text-slate">
-              Designed & Built by Chams Satour © {new Date().getFullYear()}
+              Designed & Built by Chams Satour © 2025
             </p>
           </div>
           
